@@ -1,16 +1,5 @@
 duck_scraper
 
-A Python scraping application designed to collect data efficiently using DuckDuckGo search engine.
-Features
-
-    Perform searches on DuckDuckGo and scrape results.
-
-    Modular, easy-to-extend scraper structure.
-
-    Handles HTTP requests and parses HTML content.
-
-    Configurable search parameters.
-
 Installation
 
     Clone the repository:
