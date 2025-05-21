@@ -5,7 +5,7 @@ class ExcelManager:
         df = pd.read_excel(excel_path)
         if "FirmenName" not in df.columns:
             raise ValueError("Die Spalte 'FirmenName' fehlt in der Excel-Datei.")
-        
+        df = df[df["Northdata Website"].isna() | (df["Northdata Website"].astype(str).str.strip() == '')]
         names = df["FirmenName"].fillna('').tolist()
         return names
 
