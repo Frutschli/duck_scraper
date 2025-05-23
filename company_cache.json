@@ -1,6 +1,11 @@
 {
-  "Moebel Arenz GmbH & Co. KG": {
-    "northdata_url": "https://www.northdata.de/MÖBEL+ARENZ+GmbH,+Mechernich/Amtsgericht+Bonn+HRB+11425",
-    "umsatz_website_url": "https://www.northdata.de/MÖBEL+ARENZ+GmbH,+Mechernich/Amtsgericht+Bonn+HRB+11425"
+  "BBM Einrichtungshaus GmbH": {
+    "company_name": "BBM Einrichtungshaus GmbH",
+    "urls": [
+      "https://www.northdata.de/BBM+Einrichtungshaus+GmbH,+Parchim/Amtsgericht+Schwerin+HRB+12762",
+      "https://www.northdata.de/BBM+Einrichtungshaus+GmbH,+Parchim/Amtsgericht+Schwerin+HRB+12762",
+      "[URL of the matching website]: https://uv-mv.de/mitarbeiter-sind-das-groesste-kapital-eines-unternehmens-bbm-einrichtungshaus-gmbh-hat-es-verstanden.html"
+    ],
+    "northdata_data": "**Financial Performance**:  \nBBM Einrichtungshaus GmbH's net profit (HGB) fluctuated significantly from 2015 to 2023, peaking in 2016 (€1.28M) and 2021 (€1.21M), with a loss in 2023 (€-147.5K).  \n\n**Funding**:  \nIn 2021, the company received a subsidy of €918,402 from the \"Beihilfentransparenzdatenbank.\""
   }
 }
