@@ -32,8 +32,21 @@ class CacheManager:
         cache = cls.load_cache()
         cache[name] = data
         cls.save_cache(cache)
-    
+
     @classmethod
     def clear_cache(cls):
         """Clear the entire cache by saving an empty dictionary."""
         cls.save_cache({})
+
+    @classmethod
+    def get_all_relevant_data(cls):
+        """Extract and return all relevant data fields from the cache."""
+        cache = cls.load_cache()
+        data = next(iter(cache.values()))
+
+        filtered_data = {
+            k: v for k, v in data.items()
+            if k not in ("company_name", "urls")
+        }
+        print(filtered_data)
+        return filtered_data

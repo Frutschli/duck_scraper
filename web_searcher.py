@@ -12,7 +12,8 @@ class WebSearcher:
     
 
     def search_company_restriceddata(company_name, topic, max_results):
-        query = f'{company_name} "{topic}" -site:northdata.de'
+        topic = topic.strip()
+        query = f'{company_name} "{topic}" -site:northdata.de' # +amount 
         results_list = []
         with DDGS(proxy="tb", timeout=20) as ddgs:
             results = ddgs.text(query, max_results=max_results)
@@ -22,7 +23,7 @@ class WebSearcher:
         return results_list
     
 
-#    restr_l = ["Umsatz", "Mitarbeiter"]
+#    restr_l = ["Umsatz   "]
 #    for restr in restr_l:  
 #        results = search_company_restriceddata("BBM Einrichtungshaus GmbH", restr, max_results=7)
 #        print(results)
